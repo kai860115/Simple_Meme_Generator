@@ -2,7 +2,7 @@ FROM node:14.13.0
 # Create app directory
 WORKDIR /usr/src/frontend
 # Install app dependencies
-COPY package.json yarn.lock ./
+COPY package.json ./
 RUN yarn install
 # Copy app source code
 COPY . .
