@@ -10,7 +10,7 @@ class AllImage extends Component {
                 {
                     this.props.allImage.map(img => {
                         return (
-                            <Col onClick={() => this.props.handleIDChange(img.id)} key={img.url} xs={6} >
+                            <Col onClick={() => this.props.handleIDChange(img.id)} key={img.url} >
                                 <Image src={img.url} thumbnail style={{width: 'auto', height: '90%'}}  />
                             </Col>
                         )
