@@ -14,7 +14,7 @@ class History extends Component {
                             return (
                                 <Col key={url} xs={6} md={4} className="d-flex align-items-center justify-content-end">
                                     <a href={url} >
-                                        <Image src={url} thumbnail fluid />
+                                        <Image src={url} rounded fluid />
                                     </a>
                                 </Col>
                             )

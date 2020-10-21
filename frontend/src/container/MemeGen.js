@@ -68,7 +68,7 @@ class MemeGen extends Component {
                 </Col>
                 <Col >
                     {this.state.url !== "" ? (<a href={this.state.url} >
-                        <Image src={this.state.url} thumbnail fluid />
+                        <Image src={this.state.url} rounded fluid />
                     </a>) : (<h2>Wait for generate</h2>)}
                 </Col>
             </Row>
