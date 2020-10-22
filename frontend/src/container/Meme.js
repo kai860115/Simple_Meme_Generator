@@ -20,7 +20,7 @@ class Meme extends Component {
 
   get_history = () => {
     if (this.state.updated === false) {
-      fetch('https://asia-east2-wise-boulder-291919.cloudfunctions.net/function-1', {
+      fetch('https://asia-east2-wise-boulder-291919.cloudfunctions.net/function-3', {
         method: "GET"
       }).then(response => response.json())
         .then(response => {
@@ -33,7 +33,7 @@ class Meme extends Component {
   }
 
   componentDidMount() {
-    fetch('https://asia-east2-wise-boulder-291919.cloudfunctions.net/function-3', {
+    fetch('https://asia-east2-wise-boulder-291919.cloudfunctions.net/function-1', {
       method: "GET"
     }).then(response => response.json())
       .then(response => {
