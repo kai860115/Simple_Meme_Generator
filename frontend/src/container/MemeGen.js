@@ -31,7 +31,6 @@ class MemeGen extends Component {
             body: JSON.stringify(params)
         }).then(response => response.json())
             .then(response => {
-                console.log(response)
                 this.setState({ url: response.data.url })
             }).catch(error => {
                 console.log(error)
